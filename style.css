@@ -20,6 +20,12 @@ li {
 p {
   line-height: 40px;
 }
+
+.hori-center {
+  display: flex;
+  justify-content: center;
+}
+
 .primary-btn {
   padding: 20px 60px;
   background-color: #f9fafb;
@@ -140,5 +146,97 @@ header > nav a {
 @media screen and (max-width: 600px) {
   .main-hero .hero-list {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Unique Programm Section */
+
+.program-sec {
+  padding: 40px;
+}
+.program-sec .text-smunderline {
+  margin-top: 12px;
+  width: 70px;
+  background-color: #ff3131;
+  height: 4px;
+}
+.program-sec span {
+  font-size: 32px;
+}
+.program-sec .pro-center {
+  display: flex;
+  justify-content: center;
+}
+.program-sec .pro-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 80%;
+}
+.pro-card-container .pro-card {
+  padding: 12px;
+  border: 1px solid rgb(228, 228, 231);
+  max-width: 336px;
+  border-radius: 24px;
+  background-color: white;
+  box-shaddow: 0 8px 28px -8px rgba(61, 72, 107, 0.2);
+}
+.pro-card-container .pro-card > div {
+  position: relative;
+}
+.pro-card-container .pro-card > div img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.pro-card-container .pro-card div > h3 {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 24px;
+}
+
+.pro-card-container .pro-card p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #475569;
+  padding: 20px 20px 30px 20px;
+}
+
+.program-sec button {
+  background-color: #171717;
+  color: #f9fafb;
+  border: none;
+  border-radius: 50px;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.program-sec button span {
+  font-size: inherit;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 986px) {
+  .program-sec .pro-card-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .pro-card-container .pro-card {
+    max-width: 100%;
+  }
+
+  .pro-card-container .pro-card > div img {
+    height: 150px;
   }
 }
