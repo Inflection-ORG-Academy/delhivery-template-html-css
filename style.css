@@ -3,112 +3,142 @@
 
 /* Reseting Default Spaces and Borders */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Archivo", sans-serif;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Archivo', sans-serif;
 }
 
-p,a,button,li{
-    font-size: 20px;
-
+p,
+a,
+button,
+li {
+  font-size: 20px;
 }
 
-p{
-    line-height: 40px;
+p {
+  line-height: 40px;
 }
-.primary-btn{
-    padding: 20px 60px;
-    background-color: #f9fafb;
-    color: #171717;
-    font-size: 20px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    border-radius: 120px;
-    border: none;
+.primary-btn {
+  padding: 20px 60px;
+  background-color: #f9fafb;
+  color: #171717;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  border-radius: 120px;
+  border: none;
 }
-.primary-btn i{ margin-left: 40px;font-size: 30px;}
-
-.my-20{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.primary-btn i {
+  margin-left: 40px;
+  font-size: 30px;
 }
 
-.width-40{
-    width: 40%;
+.my-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.width-40 {
+  width: 40%;
 }
 
 /* header CSS */
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 24px;
-    height: 100px;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 24px;
+  height: 100px;
 }
 
-header > nav{
-    display: flex;
-    gap: 80px;
-   
+header > nav {
+  display: flex;
+  gap: 80px;
 }
 
-header > nav a{
-    font-size: 20px;
-    font-weight: 600;
+header > nav a {
+  font-size: 20px;
+  font-weight: 600;
 }
 
-#list-menu{
+#list-menu {
+  display: none;
+}
+
+@media (max-width: 1020px) {
+  header > nav {
     display: none;
-}
-
-@media (max-width:1020px) {
-    header > nav{
-        display: none;
-    }
-    #list-menu{
-        display: flex;
-    }
+  }
+  #list-menu {
+    display: flex;
+  }
 }
 
 /* Hero Section CSS */
 
-.main-hero{
-    background: url('./assets/hero-img.png') no-repeat;
-    background-size: cover;
-    color: white;
-    padding: 40px;
-    background-position: center;
-    min-height: 39.38rem;
-    margin: 0px 30px;
-    
+.main-hero {
+  background: url('./assets/hero-img.png') no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 40px;
+  background-position: center;
+  min-height: 39.38rem;
+  margin: 0px 30px;
 }
-.main-hero h2{
-    font-size: 40px;
-    line-height: 60px;
-    font-weight: 400;
-}
-
-.main-hero .txt-red{
-    color: #ff3131;
-    font-weight: 700
+.main-hero h2 {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 400;
 }
 
-.main-hero .hero-list{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.main-hero .txt-red {
+  color: #ff3131;
+  font-weight: 700;
 }
 
-.main-hero .hero-list ul{
-    list-style-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgOCA5IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMS40NzUzMiAxLjA1M0MyLjg0MjE2IC0wLjMxMzgzNiA1LjA1ODIzIC0wLjMxMzgzNiA2LjQyNTA3IDEuMDUzQzcuNzkxOSAyLjQxOTgzIDcuNzkxOSA0LjYzNTkxIDYuNDI1MDcgNi4wMDI3NUwzLjk1MDIgOC40Nzc2MkwxLjQ3NTMyIDYuMDAyNzVDMC4xMDg0ODcgNC42MzU5MSAwLjEwODQ4NyAyLjQxOTgzIDEuNDc1MzIgMS4wNTNaIiBmaWxsPSIjRTM2NTU2Ii8+Cjwvc3ZnPgo=');
+.main-hero .hero-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
+.main-hero .hero-list ul {
+  list-style-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgOCA5IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMS40NzUzMiAxLjA1M0MyLjg0MjE2IC0wLjMxMzgzNiA1LjA1ODIzIC0wLjMxMzgzNiA2LjQyNTA3IDEuMDUzQzcuNzkxOSAyLjQxOTgzIDcuNzkxOSA0LjYzNTkxIDYuNDI1MDcgNi4wMDI3NUwzLjk1MDIgOC40Nzc2MkwxLjQ3NTMyIDYuMDAyNzVDMC4xMDg0ODcgNC42MzU5MSAwLjEwODQ4NyAyLjQxOTgzIDEuNDc1MzIgMS4wNTNaIiBmaWxsPSIjRTM2NTU2Ii8+Cjwvc3ZnPgo=');
+}
 
-.main-hero .hero-list label{
-    color: #94a3b8;
-    font-size: 14px;
-    font-weight: 600;
+.main-hero .hero-list label {
+  color: #94a3b8;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+  .width-40 {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-hero {
+    background: url('./assets/mobile-hero-img.png') no-repeat;
+  }
+
+  .main-hero h2 {
+    margin-top: 240px;
+  }
+
+  .width-40 {
+    width: 100%;
+  }
+  .main-hero .hero-list {
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-hero .hero-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
